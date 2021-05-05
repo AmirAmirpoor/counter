@@ -2,15 +2,15 @@ import { useContext } from "react";
 import { counterContext } from "../context/counter-context.jsx";
 
 const Counter = () => {
-  const { count, decrement, reset, increment } = useContext(counterContext);
+  const { count, dispatch } = useContext(counterContext);
 
   return (
     <div>
       <h2>COUNT: {count}</h2>
 
-      <button onClick={decrement}>decrement</button>
-      <button onClick={reset}>reset</button>
-      <button onClick={increment}>increment</button>
+      <button onClick={() => dispatch({ type: "DECREMENT" })}>decrement</button>
+      <button onClick={() => dispatch({ type: "RESET" })}>reset</button>
+      <button onClick={() => dispatch({ type: "INCREMENT" })}>increment</button>
     </div>
   );
 };

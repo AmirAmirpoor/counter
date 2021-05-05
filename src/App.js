@@ -7,7 +7,7 @@ function App() {
   return (
     <CounterContextProvider>
       <div className="App">
-        <h1>counter w/useContext</h1>
+        <h1>counter w/useContext + useReducer</h1>
 
         <Counter />
       </div>
