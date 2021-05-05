@@ -1,13 +1,17 @@
+import { CounterContextProvider } from "./context/counter-context.jsx";
 import Counter from "./components/Counter.jsx";
+
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1>counter w/state</h1>
+    <CounterContextProvider>
+      <div className="App">
+        <h1>counter w/useContext</h1>
 
-      <Counter />
-    </div>
+        <Counter />
+      </div>
+    </CounterContextProvider>
   );
 }
 
