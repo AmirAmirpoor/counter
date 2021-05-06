@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>counter w/state</h1>
+      <h1>counter w/redux</h1>
 
       <Counter />
     </div>
